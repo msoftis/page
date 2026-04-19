@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="MSoftis Logo" width="300">
+  <img src="msoft_logo.png" alt="MSoftis Logo" width="300">
 </p>
 
 <h1 align="center">MSoftis | Information Systems</h1>
