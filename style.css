@@ -344,6 +344,49 @@ footer {
     transform: translateY(0);
 }
 
+/* Donation Button */
+.donate-fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    z-index: 1001;
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+    transition: var(--transition-smooth);
+    animation: pulse-glow 2s infinite;
+}
+
+.donate-fab:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.6);
+}
+
+.donate-fab i {
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(139, 92, 246, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(139, 92, 246, 0);
+    }
+}
+
 @media (max-width: 768px) {
     .about-grid {
         grid-template-columns: 1fr;
@@ -355,5 +398,12 @@ footer {
     
     .hero h1 {
         font-size: 3rem;
+    }
+
+    .donate-fab {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
     }
 }
