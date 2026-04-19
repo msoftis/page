@@ -327,6 +327,12 @@ footer {
     transform: scale(1.1);
 }
 
+.social-links a i {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
 .copyright {
     color: var(--text-secondary);
     font-size: 0.85rem;
